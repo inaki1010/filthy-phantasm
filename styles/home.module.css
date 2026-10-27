@@ -1,11 +1,86 @@
 .main {
-  padding: 20px 20px 60px;
-  max-width: 680px;
+  padding: 72px 24px 60px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
-.hr {
-  border: none;
-  border-bottom: 1px solid #efefef;
-  margin: 3em auto;
+.eyebrow {
+  color: #6b5cff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.main h1 {
+  font-size: clamp(2.4rem, 8vw, 4rem);
+  letter-spacing: -0.06em;
+  line-height: 1;
+  margin: 12px 0 18px;
+}
+
+.intro {
+  color: #5c5c69;
+  max-width: 600px;
+}
+
+.form {
+  margin: 44px 0 24px;
+}
+
+.form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+}
+
+.inputRow input {
+  border: 1px solid #d9d9e2;
+  border-radius: 8px;
+  flex: 1;
+  font: inherit;
+  min-width: 0;
+  padding: 12px 14px;
+}
+
+.inputRow button {
+  background: #17171c;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0 18px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  border-bottom: 1px solid #ececf1;
+  padding: 14px 2px;
+}
+
+.empty, .hint {
+  color: #777784;
+}
+
+.error {
+  color: #b42318;
+  font-weight: 600;
+}
+
+.hint {
+  font-size: 0.9rem;
+  margin-top: 40px;
 }

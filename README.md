@@ -1,13 +1,24 @@
-# GitHub Codespaces ♥️ Next.js
+# Interview-ready Next.js starter
 
-Welcome to your shiny new Codespace running Next.js! We've got everything fired up and running for you to explore Next.js.
+This is a small Pages Router app with a complete, easy-to-explain vertical slice:
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+- TypeScript with strict checking
+- `pages/api/tasks.ts`: a typed `GET`/`POST` API route
+- Zod request validation
+- SQLite via portable `sql.js` (database is created at `data/app.db`)
+- Vitest repository test using an in-memory SQLite database
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## Commands
 
-To run this application:
-
+```bash
+npm install
+npm run dev          # start the app
+npm test             # run tests once
+npm run test:watch   # run tests while editing
+npm run typecheck    # strict TypeScript check
+npm run build        # production build
 ```
-npm run dev
-```
+
+The database file is intentionally local and should not be committed. For an
+interview task, the next natural steps are adding `PATCH`/`DELETE`, a second
+table, authentication, or moving the repository behind a service layer.
